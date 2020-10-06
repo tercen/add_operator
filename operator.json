@@ -1,9 +1,9 @@
 {
-  "name": "Median",
-  "description": "Return the medium value of a cell",
-  "tags": ["basic statistics"],
+  "name": "Add",
+  "description": "Returns the sum of two values",
+  "tags": ["basic operations"],
   "authors": ["tercen"],
-  "urls": ["https://github.com/tercen/template_operator"],
+  "urls": ["https://github.com/tercen/add_operator"],
   "properties": []
 }
 
