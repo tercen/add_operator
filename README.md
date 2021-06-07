@@ -21,4 +21,4 @@ The operator takes the value defined by the y-axis and adds the value defined by
 
 ##### See Also
 
-[substract](https://github.com/tercen/substract_operator), [sum](https://github.com/tercen/sum_operator), [product](https://github.com/tercen/product_operator), [ratio](https://github.com/tercen/ratio_operator)
+[subtract](https://github.com/tercen/subtract_operator), [sum](https://github.com/tercen/sum_operator), [product](https://github.com/tercen/product_operator), [ratio](https://github.com/tercen/ratio_operator)
