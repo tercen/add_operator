@@ -7,9 +7,11 @@ options("tercen.stepId"     = "dddd")
 getOption("tercen.workflowId")
 getOption("tercen.stepId")
 
-(ctx = tercenCtx())  %>% 
-  select(.y, .ci, .ri) %>% 
-  group_by(.ci, .ri) %>%
-  summarise(median = median(.y)) %>%
+ctx <- tercenCtx()
+
+ctx %>% 
+  select(.x, .y) %>% 
+  transmute(sum = .y + .x) %>%
   ctx$addNamespace() %>%
   ctx$save()
+
