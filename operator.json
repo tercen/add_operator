@@ -1,6 +1,6 @@
 {
   "name": "Add",
-  "description": "Calculates the sum of two values",
+  "description": "Calculates the sum of two values.",
   "tags": [
     "arithmetic"
   ],
