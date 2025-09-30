@@ -3,13 +3,12 @@ FROM tercen/runtime-r44-slim:4.4.3-4
 COPY . /operator
 WORKDIR /operator
 
-RUN apt-get update && apt-get install -y which coreutils
-
 RUN R -e "renv::consent(provided = TRUE); renv::restore(confirm = FALSE)"
 
 ENV TERCEN_SERVICE_URI https://tercen.com
 ENV OPENBLAS_NUM_THREADS=1
 ENV OMP_NUM_THREADS=1
+ENV R_SHELL=/bin/sh
 
 ENTRYPOINT ["R", "--no-save", "--no-restore", "--no-environ", "--slave", "-f", "main.R", "--args"]
 CMD ["--taskId", "someid", "--serviceUri", "https://tercen.com", "--token", "sometoken"]
