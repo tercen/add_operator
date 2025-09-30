@@ -10,7 +10,7 @@
   "urls": [
     "https://github.com/tercen/add_operator"
   ],
-  "container": "ghcr.io/tercen/add_operator:latest",
+  "container": "ghcr.io/tercen/add_operator:master",
   "properties": [],
   "operatorSpec": {
     "kind": "OperatorSpec",
