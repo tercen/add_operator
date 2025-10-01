@@ -1,14 +1,11 @@
-FROM tercen/runtime-r44-slim:4.4.3-4
+FROM tercen/runtime-r44-minimal:4.4-1
+
+RUN installr -d data.table dtplyr
 
 COPY . /operator
 WORKDIR /operator
 
-RUN R -e "renv::consent(provided = TRUE); renv::restore(confirm = FALSE)"
-
 ENV TERCEN_SERVICE_URI https://tercen.com
-ENV OPENBLAS_NUM_THREADS=1
-ENV OMP_NUM_THREADS=1
-ENV R_SHELL=/bin/sh
 
 ENTRYPOINT ["R", "--no-save", "--no-restore", "--no-environ", "--slave", "-f", "main.R", "--args"]
 CMD ["--taskId", "someid", "--serviceUri", "https://tercen.com", "--token", "sometoken"]
