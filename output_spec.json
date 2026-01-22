@@ -1,0 +1,20 @@
+{
+  "outputSpecs": [{
+    "kind": "OperatorJoinSpec",
+    "joinOperators": [{
+      "kind": "JoinOperator",
+      "joinType": "left",
+      "leftPair": {
+        "kind": "ColumnPair",
+        "lColumns": [],
+        "rColumns": []
+      },
+      "rightRelation": {
+        "kind": "TableRelation",
+        "attributes": [
+          {"kind": "Attribute", "name": "sum", "type": "double"}
+        ]
+      }
+    }]
+  }]
+}
