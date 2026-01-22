@@ -29,7 +29,7 @@
                 "name": "Initial value",
                 "type": "numeric",
                 "description": "Initial value before addition",
-                "ontologyMapping": "y-axis",
+                "ontologyMapping": "measurement",
                 "crosstabMapping": "y",
                 "cardinality": "1",
                 "factors": []
@@ -39,7 +39,7 @@
                 "name": "Added value",
                 "type": "numeric",
                 "description": "Value to be added to the initial value",
-                "ontologyMapping": "x-axis",
+                "ontologyMapping": "measurement",
                 "crosstabMapping": "x",
                 "cardinality": "1",
                 "factors": []
