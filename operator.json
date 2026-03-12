@@ -27,7 +27,7 @@
               {
                 "kind": "MetaFactor",
                 "name": "Initial value",
-                "type": "numeric",
+                "type": "double",
                 "description": "Initial value before addition",
                 "ontologyMapping": "measurement",
                 "crosstabMapping": "y",
@@ -37,7 +37,7 @@
               {
                 "kind": "MetaFactor",
                 "name": "Added value",
-                "type": "numeric",
+                "type": "double",
                 "description": "Value to be added to the initial value",
                 "ontologyMapping": "measurement",
                 "crosstabMapping": "x",
